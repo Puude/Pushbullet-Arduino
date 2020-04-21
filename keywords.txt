@@ -1,0 +1,13 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PushBullet	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+sendNotePush	KEYWORD2
+senLinkPush	KEYWORD2
+sendSMSPush	KEYWORD2
