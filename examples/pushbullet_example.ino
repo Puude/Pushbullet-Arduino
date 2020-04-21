@@ -27,10 +27,11 @@ void loop() {
 	delay(3000);
 	pb.sendLinkPush("<title>", "<message>", "<link-url>");
 	delay(3000);
-	/* get source_user_iden & target_device_iden: 
+	pd.sendSMSPush("<message>", "<receive_phoneNumber>", "<source_user_iden>", "<target_device_iden>" ) 
+		
+	/* To get source_user_iden & target_device_iden: 
 		curl --header 'Access-Token: <your_access_token_here>' \
 			https://api.pushbullet.com/v2/devices */
-	pd.sendSMSPush("<message>", "<receive_phoneNumber>", "<source_user_iden>", "<target_device_iden>" ) 
-
-	while();
+		
+	while(true);
 }
