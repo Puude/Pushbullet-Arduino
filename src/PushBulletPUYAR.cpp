@@ -11,11 +11,11 @@ PushBullet::PushBullet(const String api_token, WiFiSSLClient &client, const Stri
 
 String PushBullet::buildRequest(String url, String body){
 	String request = String("POST ") + url +" HTTP/1.1\r\n" +
-                   "Host: " + this->host + "\r\n" +
-				   "Access-Token: " + this->api_token + "\r\n" +
-                   "Content-Type: application/json\r\n" +
-                   "Content-Length: "+ String(body.length()) +"\r\n\r\n" +
-                   body + "\r\n";
+		"Host: " + this->host + "\r\n" +
+		"Access-Token: " + this->api_token + "\r\n" +
+                "Content-Type: application/json\r\n" +
+                "Content-Length: "+ String(body.length()) +"\r\n\r\n" +
+                body + "\r\n";
 	return request;
 }
 
